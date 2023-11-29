@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  min-height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #99d4e0, #99e0b8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+.emoji {
+  aspect-ratio: 1/1;
+  width: min(90%, 300px);
+  display: grid;
+  place-items: center;
+  font-size: 13rem;
+  filter: drop-shadow(8px 8px 10px #0000001c);
+}
+#input {
+  height: 3rem;
+  width: min(90%, 300px);
+  outline: none;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 8px 8px 10px #0000001c;
+}
+#input::placeholder {
+  color: #78a8b1;
+}
